@@ -1,0 +1,19 @@
+# Extra dependencies for notebooks/ (install on top of ../requirements.txt)
+#
+#   pip install -r requirements.txt -r notebooks/requirements-notebooks.txt
+#
+# Keep the core serving requirements in ../requirements.txt — training-only
+# tooling belongs here so the container image stays small.
+
+jupyterlab>=4.2,<5
+notebook>=7.2,<8
+ipykernel>=6.29
+matplotlib>=3.8
+scikit-learn>=1.4
+
+# Export path used by 03_export_and_validate.ipynb
+tf2onnx>=1.16
+onnx>=1.16
+
+# TensorBoard is optional but recommended once runs start stacking up
+# tensorboard>=2.17
