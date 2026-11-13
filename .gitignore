@@ -26,6 +26,18 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# Notebook workspace (datasets, weights, exports, logs stay out of Git)
+notebooks/data/*
+!notebooks/data/README.md
+notebooks/artifacts/*
+!notebooks/artifacts/README.md
+notebooks/runs/
+notebooks/.ipynb_checkpoints/
+notebooks/**/*.keras
+notebooks/**/*.h5
+notebooks/**/*.tflite
+notebooks/**/*.safetensors
+
 # Build files
 build/
 dist/
