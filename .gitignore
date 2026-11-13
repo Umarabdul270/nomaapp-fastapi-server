@@ -1,26 +1,56 @@
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Virtual environment
 .venv/
 venv/
 env/
-*.egg-info/
-build/
-dist/
 
-# Environment
+# Environment variables
 .env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Pytest cache
+.pytest_cache/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Tooling / OS
-.vscode/
-.idea/
-.DS_Store
-*.log
+# Notebook workspace (datasets, weights, exports, logs stay out of Git)
+notebooks/data/*
+!notebooks/data/README.md
+notebooks/artifacts/*
+!notebooks/artifacts/README.md
+notebooks/runs/
+notebooks/.ipynb_checkpoints/
+notebooks/**/*.keras
+notebooks/**/*.h5
+notebooks/**/*.tflite
+notebooks/**/*.safetensors
 
-# Temp
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Uploaded/test images
+test_img/
+
+# Model weights (if large)
+*.pt
+*.pth
+*.onnx
+
+# Temporary files
 tmp/
 temp/
